@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Portofolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style type="text/css">
+        .active{
+            background: #006669;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav bar menu -->
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Recognize Pascal</h1>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a class="active" href="contactMe.html">Contact Me</a></li>
+        </ul>
+    </header>
+    <!-- Page Wrapper -->    
+    <div class="auth-content">
+        <form action="register.html" method="POST">
+            <h2 class="form-title">Contact Me</h2>
+            <!-- <div class="msg success error">
+                <li>Username required</li>
+            </div> -->
+            <div>
+                <label>Your Names</label>
+                <input type="text" name="username" class="text-input">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" class="text-input">
+            </div>
+            <div>
+                <label>Subject</label>
+                <input type="text" name="password" class="text-input">
+            </div>
+            <div>
+                <label>Your Message</label>
+                <input type="text" name="passwordConf" class="text-input textarea" style="line-height: 100px;">
+            </div>
+            <div>
+                <button type="submit" name="register-btn" class="btn btn-big">Send</button>
+            </div>
+            <!-- <p>Or <a href="login.html">Sign In</a></p> -->
+        </form>
+    </div>
+</body>
+</html>

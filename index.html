@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your website title goes here</title>
+    <title>Welcome To Portofolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style type="text/css">
+        .active{
+            background: #006669;
+        }
+    </style>
 </head>
 <body>
-    <!-- Add your content here: use semantic tags where possible -->
+    <!-- Nav bar menu -->
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Recognize Pascal</h1>
+        </div>
+        <ul class="nav">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skill</a></li>
+            <li><a href="contentMe.html">Contact Me</a></li>
+        </ul>
+    </header>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+        <div class="content-left">
+            <h1 class="content-head">Want to know me?</h1>
+            <p class="content-myname">Hello, My name is: </p>
+            <p class="content-myNameIs">MUSANGWA PASCAL </p>
+            <p class="content-mywork">A FULL STACK DEVELOPER </p>
+            <button class="download">Download CV</button>
+            <button class="play">Play Video</button>
+        </div>
+        <div class="content-right">
+            <img src="images/profile.jpg" alt="Profile" width="530" height="600">
+        </div>
+    </div>
 </body>
 </html>
