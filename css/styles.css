@@ -1,260 +1,278 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 html,body {
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	background: #f6f6f6;
-	font-family: 'Lora',serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #f6f6f6;
+    font-family: 'Lora',serif;
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'candal',serif;
-	color: #444;
-	margin: 5px;
+    font-family: 'candal',serif;
+    color: #444;
+    margin: 5px;
 }
 header {
-	background: #008489;
-	height: 66px;
+    background: #008489;
+    height: 66px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
 }
 header *{
-	color: white;
+    color: white;
 }
 header .logo{
-	float: left;
-	height: inherit;
-	margin-left: 2em;
+    float: left;
+    height: inherit;
+    margin-left: 2em;
 }
 header .logo-text{
-	margin: 9px;
-	font-family: 'candal',serif;
+    margin: 9px;
+    font-family: 'candal',serif;
 }
 header ul{
-	float: right;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 header ul li{
-	float: left;
-	position: relative;
-	z-index: 88888;
+    float: left;
+    position: relative;
+    z-index: 88888;
 }
 header ul li a{
-	display: block;
-	padding: 21.5px;
-	font-size: 1.1em;
-	text-decoration: none;
+    display: block;
+    padding: 21.5px;
+    font-size: 1.1em;
+    text-decoration: none;
 }
 header ul li a:hover{
-	background: #006669;
-	transition: 0.5s;
+    background: #006669;
+    transition: 0.5s;
 }
 .page-wrapper{
-	height: 100vh;
-	width: 100%;
-	float: left;
-	background: #34495E;
-	color: #FFF;
+    height: 100vh;
+    width: 100%;
+    float: left;
+    background: #34495E;
+    color: #FFF;
 }
 .page-wrapper h1{
-	color: #fff;
-	margin-left: 0;
-	margin-top: 150px;
+    color: #fff;
+    margin-left: 0;
+    margin-top: 150px;
 }
 .page-wrapper .content-left{
-	float: left;
-	width: 40%;
-	position: relative;
-	font-family: 'Lora',serif;
+    float: left;
+    width: 40%;
+    position: relative;
+    font-family: 'Lora',serif;
 }
 .page-wrapper p.content-myNameIs{
-	font-size: 40px;
+    font-size: 40px;
 }
 .page-wrapper p.content-mywork{
-	font-size: 25px;
-	font-weight: 600;
-	color: red;
+    font-size: 25px;
+    font-weight: 600;
+    color: red;
 }
 .page-wrapper .content-left p,h1{
-	position: relative;
-	top: 0%;
-	left: 40%;
+    position: relative;
+    top: 0%;
+    left: 40%;
 }
 .page-wrapper .content-left button{
-	position: relative;
-	top: 50%;
-	left: 40%;
-	margin-top: 30px;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    margin-top: 30px;
 }
 .page-wrapper .content-right{
-	float: right;
-	width: 40%;
-	margin-right: 70px;
+    float: right;
+    width: 40%;
+    margin-right: 70px;
 }
 .page-wrapper .content-right img{
-	/*border: 12px solid green;*/
-	border-radius: 50%;
-	margin: 20px;
+    /*border: 12px solid green;*/
+    border-radius: 50%;
+    margin:100px 10px 0 0px;
 }
 
 .page-wrapper button{
-	width: 200px;
-	font-size: 18px;
-	padding: 8px 20px;
-	border-radius: 50px; 
-	cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 50px; 
+    cursor: pointer;
 }
 .page-wrapper button.download{
-	color: #000;
-	border: none;
+    color: #000;
+    border: none;
 }
 .page-wrapper button.download:hover{
-	color: #34495E;
+    color: #34495E;
 }
 .page-wrapper button.play:hover{
-	color: #000;
+    color: #000;
 }
 .page-wrapper button.play{
-	color: #fff;
-	background: transparent;
-	border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
 }
 .about-wrapper{
-	width: 100%;
-	/*background: skyblue;*/
-	margin-top: 10px;
-	float: left;
-	display: relative;
+    display:table;
+    padding:5px; 
+    width:100%;
+   
 }
-.about-wrapper .header h1{
-	color: #f3f;
-	font-weight: 600;
-	font-size: 50px	;
+.about-wrapper .header h2{
+    color: #f3f;
+    font-weight: 600;
+    font-size: 50px ;
 }
 .about-wrapper .image{
-	width: 40%;
-	margin: 10px;
-	float: left;
-	/*border: 1px solid red;*/
+    width: 40%;
+    margin: 10px;
+    float: left;
+    /*border: 1px solid red;*/
 }
 .about-wrapper .text{
-	width: 55%;
-	margin: 10px;
-	float: right;
-	/*border: 1px solid blueviolet;*/
+    display: relative;
+    width: 50%;
+    margin: 10px;
+    float: right;
+    /*border: 1px solid blueviolet;*/
 }
 .about-wrapper .first_paragraph #firstHeader{
-	color: skyblue;
-	font-weight: 500;
-	font-size: 25px;
+    color: skyblue;
+    font-weight: 500;
+    font-size: 25px;
 }
 .about-wrapper .text .first_left label{
-	font-style: italic;
-	font-weight: bold;
+    font-style: italic;
+    font-weight: bold;
 }
 .about-wrapper .text .right_left label{
-	font-style: italic;
-	font-weight: bold;
+    font-style: italic;
+    font-weight: bold;
 }
 .about-wrapper .text .button button{
-	border-radius: 90px;
-	width: 240px;
-	padding: 10px;
-	font-size: 20px;
-	cursor: pointer;
+    border-radius: 90px;
+    width: 240px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
 .about-wrapper .text .button button.hireMe{
-	background: olivedrab;
-	border: none;
-	color: white;
-	font-style: bold;
+    background: olivedrab;
+    border: none;
+    color: white;
+    font-style: bold;
 }
 .about-wrapper .text .button button.hireMe:hover{
-	color: #fff;
-	background: transparent;
-	font-style: oblique;
-	border: 1px solid orange;
+    color: #fff;
+    background: transparent;
+    font-style: oblique;
+    border: 1px solid orange;
 }
 .about-wrapper .text .button button.learnMore:hover{
-	color: #fff;
-	background: yellowgreen;
-	font-style: oblique;
-	border: 1px solid yellow;
+    color: #fff;
+    background: yellowgreen;
+    font-style: oblique;
+    border: 1px solid yellow;
 }
-.page-wrap {
-	width: 100%;
-	float: left;
-}
-
-.page-wrap .heading1{
-	margin-left: 40px;
-	margin-top: 20px;
-}
-.page-wrap .skills{
-	margin-left: 30px;
-	padding: 30px;
-	float: left;
-	background: white;
-}
-.page-wrap .sub_heading1{
-	width: 50%;
-	float: right;
-}.page-wrap .sub_heading2{
-	width: 50%;
-	float: right;
+.skill-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background: #d4f2ec;
 }
 
+.left-container {
+  vertical-align: middle;
+  display: table-cell;
+  width: 40%;
+  padding: 10px;
+  margin-left: 10px;
+}
+.left-container section {
+  background: white;
+  padding: 20px;
+}
+.right-container {
+  vertical-align: middle;
+  display: table-cell;
+  width: 60%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.margin{
+    height: 100vh;
+    background: #d09a9a;
+}
 .auth-content{
-	width: 50%;
-	margin:50px auto;
-	padding:20px;
-	background: white;
-	border-radius: 5px;
+    margin: 30px;
+    width: 50%;
+    margin:50px auto;
+    padding:20px;
+    background: #b9a6a6;
+    border-radius: 5px;
 }
 .auth-content .form-title{
-	text-align: center;
+    text-align: center;
+    color: red;
+}
+.auth-content form {
+    margin-top: 20px;
 }
 .auth-content form div{
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .auth-content form p{
-	text-align: center;
+    text-align: center;
 }
 .text-input{
-	padding: .7rem 1rem;
-	display: block;
-	width: 100%;
-	border-radius: 5px;
-	outline: none;
-	color: #444;
-	line-height: 1.5rem;
-	font-size: 1.5em;
-	font-family: 'Lora',serif;
-	border:1px solid #e0e0e0;
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    color: #444;
+    line-height: 1.5rem;
+    font-size: 1.5em;
+    font-family: 'Lora',serif;
+    border:2px solid black;
 }
 
 .btn{
-	padding: .5rem 1rem;
-	background: #006669;
-	color: white;
-	border:1px solid transparent;
-	border-radius: .25rem;
-	font-size:1.08em;
-	font-family: 'Lora',serif;
+    padding: .5rem 1rem;
+    background: #006669;
+    color: white;
+    border:1px solid transparent;
+    border-radius: .25rem;
+    font-size:1.08em;
+    font-family: 'Lora',serif;
 }
 .btn:hover{
-	color: white !important;
-	background:#005255;
-	cursor: pointer;
+    color: white !important;
+    background:#005255;
+    cursor: pointer;
 }
 .btn .textarea input[type="text"]{
-	line-height: 100px;
+    line-height: 100px;
 }
 .btn-big{
-	padding:.7rem 1.9rem;
-	line-height: 1.3rem;
-	width: 100%;
+    padding:.7rem 1.9rem;
+    line-height: 1.3rem;
+    width: 100%;
+}
+#about: target{
+    background: green;
 }
